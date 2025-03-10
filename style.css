@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   height: 100vh;
+   box-sizing: border-box;
+   background-color: black;
+   color: white;
+
+}
+
+strong {
+   color: rgb(245, 101, 190);
+}
+.elemento-pai {
+   margin: 10%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+   width: 615px;
+}
+
+.apresentacao__titulo {
+   font-size: 36px;
+   font-family: "Raleway", sans-serif;
+}
+
+.apresentacao__paragrafo {
+   font-size: 24px;
+   font-family: "Oswald", sans-serif;
+}
