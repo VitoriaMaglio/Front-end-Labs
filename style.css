@@ -46,7 +46,10 @@ strong {
 }
 .apresentacao__botoes {
    display: flex;
+   flex-direction: column ;
+   align-items: center;
    justify-content: space-between;
+   gap: 30px;
 }
 
 .apresentacao__link {
