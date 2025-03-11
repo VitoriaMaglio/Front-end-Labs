@@ -15,7 +15,7 @@ body {
 }
 
 strong {
-   color: rgb(245, 101, 190);
+   color: #f749da;
 }
 .elemento-pai {
    margin: 10% 15%;
@@ -51,21 +51,40 @@ strong {
    justify-content: space-between;
    gap: 30px;
 }
+.apresentacao_subtitulo{
+   font-family: "Kanit", sans-serif;
+   font-weight: 400;
+   font-size: 24px;
 
+}
 .apresentacao__link {
-   background-color:rgb(245, 101, 190);
-   width: 280px;
+   /* background-color:rgb(245, 101, 190); */
+   width: 380px;
    text-align: center;
-   border-radius: 16px;
+   border-radius: 8px;
    font-size: 24px;
    padding: 21.5px 0;
    text-decoration: none;
-   color: black;
+   color: #f6f6f6;
+   border:2px solid #f749da;
    font-family: "Kanit", sans-serif;
    font-weight: 400;
+   
 
 }
 
+.apresentacao__link  { 
+   display: inline-flex; /* Torna os links em linha com a imagem e o texto */
+  align-items: center; /* Alinha o texto e a imagem verticalmente */
+  padding: 8px 12px; /* Ajuste o padding para controlar o espaço ao redor */
+  text-decoration: none;
+}
+.apresentacao__link img {
+   width: 20px; /* Ajuste o tamanho da imagem */
+   height: auto; /* Mantém a proporção da imagem */
+   margin-right: 8px; /* Espaço entre a imagem e o texto */
+ }
+ 
 .imagem {
    width: 600px;
    height: 720px;
