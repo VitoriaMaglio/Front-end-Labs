@@ -22,7 +22,7 @@ strong {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   margin-top: -20px;
+   margin-top: 100px;
 }
 
 .apresentacao__conteudo {
@@ -61,4 +61,9 @@ strong {
    font-family: "Kanit", sans-serif;
    font-weight: 400;
 
+}
+
+.imagem {
+   width: 600px;
+   height: 720px;
 }
