@@ -7,7 +7,7 @@
 }
 
 body {
-   height: 100vh;
+   padding-top: 0%;
    box-sizing: border-box;
    background-color: black;
    color: white;
@@ -18,11 +18,11 @@ strong {
    color: #f749da;
 }
 .elemento-pai {
-   margin: 10% 15%;
+   padding:0 12%;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   margin-top: 100px;
+   margin-top: 0;
 }
 
 .apresentacao__conteudo {
@@ -37,6 +37,21 @@ strong {
    font-size: 36px;
    font-family: "Kanit", sans-serif;
    font-weight: 400;
+}
+
+.cabecalho_menu {
+   font-family: "Kanit", sans-serif;
+   font-weight: 400;
+   font-size: 36px;
+   color:  #f749da;
+   margin-right: 10px;
+   padding: 10px 20px;
+   text-decoration: none;
+}
+
+.cabecalho {
+   padding:2% 0% 0% 12%;
+   
 }
 
 .apresentacao__paragrafo {
@@ -90,5 +105,25 @@ strong {
 
 .imagem {
    width: 600px;
-   height: 720px;
+   height: auto;
+   margin-top: -50px;
+}
+
+.apresentacao__link:hover {
+   background-color: rgb(19, 17, 17);
+}
+
+.rodape {
+   padding: 24px;
+   color: #000;
+   background-color: #f749da;
+   text-align: center;
+   font-family: "Kanit", sans-serif;
+   font-weight: 400;
+
+}
+
+.menu {
+   display: flex;
+   gap:100px;
 }
