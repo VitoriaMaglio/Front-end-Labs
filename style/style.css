@@ -106,7 +106,7 @@ strong {
 .imagem {
    width: 600px;
    height: auto;
-   margin-top: -50px;
+   margin-top: -10px;
 }
 
 .apresentacao__link:hover {
@@ -120,7 +120,9 @@ strong {
    text-align: center;
    font-family: "Kanit", sans-serif;
    font-weight: 400;
-
+   bottom: 1%;
+   position: absolute;
+   width: 100%;
 }
 
 .menu {
