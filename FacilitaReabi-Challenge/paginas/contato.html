@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - FacilitaReabi</title>
+  <link rel="stylesheet" href="../estilos/estilo.css" />
+  <link rel="stylesheet" href="../estilos/estilo_pags_navegacao.css" />
+  <link rel="icon" href="../icon/icon.png" type="image/png">
+  <style>
+    .erro {
+      color: red;
+      font-size: 1rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="titulo_logo">
+      <img src="../img/logo-hc.png" alt="Logo do hospital das Clínicas" class="logo" />
+      <h1>FacilitaReabi</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../paginas/integrantes.html">Integrantes</a></li>
+        <li><a href="../paginas/faq.html">FAQs</a></li>
+        <li><a href="#contato">Contatos</a></li>
+        <li><a href="../paginas/aplicativo.html">FacilitaReabi</a></li>
+        <li><a href="../paginas/triagem.html">Triagem</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>📬 Contatos</h2>
+      <p>Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo</p>
+      <p>
+        <strong>Endereço</strong><br />
+        Av. Dr. Enéas de Carvalho Aguiar, 255<br />
+        Cerqueira César<br />
+        05403-000<br />
+        São Paulo - Brasil<br />
+        Tel.: (0xx11) 2661-0000</p>
+      <h3>📨 Envie sua mensagem</h3>
+      <form id="formContato">
+        <label>Nome:<br /><input type="text" id="nome" required /></label><br />
+        <span class="erro" id="erroNome">Por favor, preencha seu nome.</span><br/>
+        <label>Email:<br /><input type="email" id="email" required /></label><br/>
+        <span class="erro" id="erroEmail">Insira um email válido.</span><br />
+        <label>Mensagem:<br /><textarea id="mensagem" required></textarea></label><br/>
+        <span class="erro" id="erroMensagem">Escreva sua mensagem.</span><br />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="cor_fundo">
+      <p>&copy; 2025 FacilitaReabi. Todos os direitos reservados.</p>
+      <p>Clique aqui para ir direto para o Menu.</p>
+      <a href="../index.html" class="conheca">Menu</a>
+      <p>Saiba mais sobre os integrantes do grupo!</p>
+      <a href="../paginas/integrantes.html" class="conheca">Integrantes</a>
+    </div>
+  </footer>
+  <!--  Link para o arquivo JavaScript externo -->
+  <script src="../js/contato.js"></script>
+</body>
+</html>

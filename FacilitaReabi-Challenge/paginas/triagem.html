@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triagem - FacilitaReabi</title>
+  <link rel="stylesheet" href="../estilos/estilo.css">
+  <link rel="stylesheet" href="../estilos/estilo_pags_navegacao.css">
+  <link rel="icon" href="../icon/icon.png" type="image/png">
+  <style>
+    .erro {
+      color: red;
+      display: none;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="titulo_logo">
+      <img src="../img/logo-hc.png" alt="Logo do hospital das Clínicas" class="logo">
+    <h1>FacilitaReabi</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../paginas/integrantes.html">Integrantes</a></li>
+        <li><a href="../paginas/faq.html">FAQs</a></li>
+        <li><a href="../paginas/contato.html">Contatos</a></li>
+        <li><a href="../paginas/aplicativo.html">FacilitaReabi</a></li>
+        <li><a href="#triagem">Triagem</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+  <main>
+    <section>
+      <h2>🩺 Triagem da Teleconsulta</h2>
+      <form id="formTriagem">
+        <div class="grupo-pergunta">
+          <label for="internet">Você possui acesso estável à internet?</label><br />
+          <select id="internet" name="internet" required>
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+          <span class="erro" id="erroInternet">Por favor, responda esta pergunta.</span>
+          <label for="dispositivo">Você tem um dispositivo com câmera e microfone funcionando?</label><br />
+          <select id="dispositivo" name="dispositivo" required>
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+          <span class="erro" id="erroDispositivo">Por favor, responda esta pergunta.</span>
+          <label for="conforto">Você se sente confortável em compartilhar informações pessoais online?</label><br />
+          <select id="conforto" name="conforto" required>
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+          <span class="erro" id="erroConforto">Por favor, responda esta pergunta.</span>
+          <label for="presencial">Você possui alguma condição médica que exige atendimento presencial imediato?</label><br />
+          <select id="presencial" name="presencial" required>
+            <option value="">Selecione</option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+          </select>
+          <span class="erro" id="erroPresencial">Por favor, responda esta pergunta.</span>
+        </div>
+        <div >
+          <label for="especialidade">Você deseja atendimento em Psicologia e/ou Fonoaudiologia?</label><br />
+          <select id="especialidade" name="especialidade" required>
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+          <span class="erro" id="erroEspecialidade">Por favor, responda esta pergunta.</span>
+        </div><br />
+        <button type="submit">Verificar se sou apto</button>
+      </form>
+          <div id="resultadoTriagem" style="display:none; margin-top: 20px; background-color: #f1f1f1; padding: 10px; border-radius: 5px;"></div>
+          <button id="btnToggleRecomendacoes" style="margin-top: 10px;">Mostrar Recomendações</button>
+          <div id="recomendacoes" style="display: none;">
+            <p>💡 Se tiver dificuldades, confira nossa seção de ajuda e dicas no site.</p>
+            <p>🚑 Se você possui uma condição que exige atendimento presencial, entre em contato com nossa equipe.</p>
+          </div>
+    </section>
+  </main>
+  <footer>
+    <div class="cor_fundo">
+      <p>&copy; 2025 FacilitaReabi. Todos os direitos reservados.</p>
+      <p>Clique aqui para ir direto para o Menu.</p>
+      <a href="../index.html" class="conheca">Menu</a>
+      <p>Saiba mais sobre os integrantes do grupo!</p>
+      <a href="../paginas/integrantes.html" class="conheca">Integrantes</a>
+    </div>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>
